@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel = "shortcut icon" href="Img/Pokeball.png">
+    <link rel = "stylesheet" href="estilos.css">
+</head>
+<body>
+    <table>
+        <tr align="center" style= "justify-content: right;">
+            <td align="center">
+                <div class="Input-container">
+                    <input class ="pokeName_Input"type="text" placeholder="Ingresa el nombre de un pokemon" id="pokeName" name="pokeName">
+                </div>
+                <div class="img-container">
+                    <img src="Img/Pokeball.png" alt="Pokemon" width="170px" id = "pokeImg">
+                </div>
+                <div class="button-container">
+                    <a class="button"onclick="fetchPokemon()" href="#">Cambiar pokemon</a>
+                </div>
+            </td>
+            <td align="center">
+                <div>
+                    <div class="PokeName-container">
+                        <h1 class="PokeName" id ="Names">Name</h1>
+                    </div>
+                    <div class="PokeID-container">
+                        <h1 class="PokeID" id="id">ID</h1>
+                    </div>
+                    <div class="PokeType-container">
+                        <img id = "type1" class="img-type1"src="Img/normal.gif">
+                        <img id = "type2" class="img-type2"src="Img/normal.gif">
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="stats-container">
+        <h1 class="stats">STATS</h1><br>
+    </div>
+    <div class="stats-container">
+        <h1 class="categories">HP</h1>
+        <h1 class="categories">ATK</h1>
+        <h1 class="categories">DEF</h1>
+        <h1 class="categories">SP-ATK</h1>
+        <h1 class="categories">SP-DEF</h1>
+        <h1 class="categories">SPEED</h1>
+    </div>
+    <div class="single-stat-container">
+        <h1 id = "HP" class="stat">0</h1>
+        <h1 id = "ATTACK" class="stat">0</h1>
+        <h1 id = "DEFENSE" class="stat">0</h1>
+        <h1 id = "SPECIAL-ATTACK" class="stat">0</h1>
+        <h1 id = "SPECIAL-DEFENSE" class="stat">0</h1>
+        <h1 id = "SPEED" class="stat">0</h1>
+    </div>
+    <div class="moves-container">
+        <textarea class="moves" id="moves" cols="20" rows="10" style="resize: both;">Movimientos</textarea>
+    </div>
+</body>
+<footer>
+    <script src="Pokedex.js"></script>
+</footer>
+</html>
